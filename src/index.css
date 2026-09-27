@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --color-ink: #ece8e1;
+  --color-muted: #a39e94;
+  --color-bg: #090b0e;
+  --color-card: #12151a;
+  --color-line: #2c3036;
+  --color-brass: #c6a36a;
+  --color-brass-2: #e4c99a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(900px 420px at 100% -10%, rgba(198, 163, 106, 0.08), transparent 55%),
+    var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: rgba(198, 163, 106, 0.35);
+}
+
+.btn-primary,
+.btn-ghost,
+.social-link,
+.field {
+  transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 999px;
+  background: var(--color-brass);
+  color: #1a140c;
+  padding: 0.7rem 1.05rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: var(--color-brass-2);
+}
+
+.btn-ghost,
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-line);
+  padding: 0.7rem 1.05rem;
+  font-size: 0.92rem;
+  color: var(--color-ink);
+}
+
+.btn-ghost:hover,
+.social-link:hover {
+  border-color: rgba(198, 163, 106, 0.55);
+}
+
+.field {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--color-line);
+  background: rgba(18, 21, 26, 0.8);
+  color: var(--color-ink);
+  padding: 0.75rem 0.9rem;
+  font: inherit;
+}
+
+.field:focus {
+  outline: 2px solid rgba(198, 163, 106, 0.7);
+  outline-offset: 2px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.reveal-in {
+  animation: rise 640ms ease forwards;
+}
+
+.pulse-ring {
+  transform-origin: center;
+  animation: pulse 3.6s ease-out infinite;
+}
+
+@keyframes rise {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal-in,
+  .pulse-ring {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
