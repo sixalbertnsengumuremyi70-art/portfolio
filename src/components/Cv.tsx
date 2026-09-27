@@ -1,4 +1,4 @@
-import { achievements, languages, profile, projects, references, skillGroups, socialLinks, timeline } from "../content";
+import { achievements, certificates, languages, profile, projects, references, skillGroups, socialLinks, timeline } from "../content";
 
 export function Cv() {
   return (
@@ -67,6 +67,16 @@ export function Cv() {
               {group.items.join(", ")}
             </p>
           ))}
+        </section>
+        <section className="mt-8">
+          <h2 className="text-xs tracking-[0.16em] uppercase">Certificates</h2>
+          <ul className="mt-3 space-y-2 text-sm">
+            {certificates.map((item) => (
+              <li key={item.file}>
+                {item.title} — {item.issuer} ({item.date})
+              </li>
+            ))}
+          </ul>
         </section>
         <section className="mt-8">
           <h2 className="text-xs tracking-[0.16em] uppercase">Activities</h2>

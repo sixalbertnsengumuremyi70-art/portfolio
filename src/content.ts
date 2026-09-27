@@ -166,6 +166,75 @@ export const timeline: TimelineItem[] = [
   },
 ];
 
+export type Certificate = {
+  title: string;
+  issuer: string;
+  date: string;
+  detail: string;
+  image: string;
+  file: string;
+};
+
+export const certificates: Certificate[] = [
+  {
+    title: "Rwanda Climate Science Symposium",
+    issuer: "Ministry of Environment, Republic of Rwanda",
+    date: "22–23 September 2026",
+    detail: "Certificate of participation in the second symposium, held in Kigali.",
+    image: "/certificates/rcss-2026-1.jpg",
+    file: "/certificates/rcss-2026.pdf",
+  },
+  {
+    title: "Statement of results",
+    issuer: "Rwanda Polytechnic, Gishari College",
+    date: "7 August 2025",
+    detail:
+      "First-year results in Electronics and Telecommunication Technology for the 2024–2025 academic year.",
+    image: "/certificates/transcript-1.jpg",
+    file: "/certificates/transcript.pdf",
+  },
+  {
+    title: "Generative AI — Master",
+    issuer: "Ingazi and Microsoft Learning",
+    date: "11 July 2025",
+    detail: "Completion of the Generative AI Master course on Ingazi.",
+    image: "/certificates/ingazi-master-1.jpg",
+    file: "/certificates/ingazi-master.pdf",
+  },
+  {
+    title: "Generative AI — Medium",
+    issuer: "Ingazi and Microsoft Learning",
+    date: "11 July 2025",
+    detail: "Completion of the Generative AI Medium course on Ingazi.",
+    image: "/certificates/ingazi-medium-1.jpg",
+    file: "/certificates/ingazi-medium.pdf",
+  },
+  {
+    title: "Generative AI — Foundations",
+    issuer: "Ingazi and Microsoft Learning",
+    date: "11 July 2025",
+    detail: "Completion of the Generative AI Foundations course on Ingazi.",
+    image: "/certificates/ingazi-foundations-1.jpg",
+    file: "/certificates/ingazi-foundations.pdf",
+  },
+  {
+    title: "Video-Photography",
+    issuer: "Bright Future Cornerstone",
+    date: "Completed",
+    detail: "Certificate of completion for the Video-Photography course.",
+    image: "/certificates/completion-1.jpg",
+    file: "/certificates/completion.pdf",
+  },
+  {
+    title: "Advanced TVET Certificate V",
+    issuer: "NESA, Lycée de Nyanza",
+    date: "December 2023",
+    detail: "National examination pass in Electronic Services.",
+    image: "/certificates/nesa-1.jpg",
+    file: "/certificates/nesa.pdf",
+  },
+];
+
 export type Achievement = {
   kind: string;
   title: string;

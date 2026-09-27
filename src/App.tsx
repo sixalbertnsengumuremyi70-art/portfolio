@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { About } from "./components/About";
 import { Achievements } from "./components/Achievements";
+import { Certificates } from "./components/Certificates";
 import { Contact } from "./components/Contact";
 import { Cv } from "./components/Cv";
 import { Developer } from "./components/Developer";
@@ -38,6 +39,7 @@ export default function App() {
         <Projects />
         <Experience />
         <Achievements />
+        <Certificates />
         <Developer />
         <Contact />
       </main>
