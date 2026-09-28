@@ -185,6 +185,14 @@ export const certificates: Certificate[] = [
     file: "/certificates/rcss-2026.pdf",
   },
   {
+    title: "Global Game Jam",
+    issuer: "Digital Realm — Global Game Jam Rwanda",
+    date: "2026",
+    detail: "Certificate of participation at the Rwanda site, with RGDA.",
+    image: "/certificates/grpbal-game-jam-1.jpg",
+    file: "/certificates/grpbal-game-jam.pdf",
+  },
+  {
     title: "Statement of results",
     issuer: "Rwanda Polytechnic, Gishari College",
     date: "7 August 2025",
@@ -218,12 +226,37 @@ export const certificates: Certificate[] = [
     file: "/certificates/ingazi-foundations.pdf",
   },
   {
+    title: "Driving license",
+    issuer: "Republic of Rwanda",
+    date: "10 May 2025",
+    detail: "Class B license, issued in Kigali.",
+    image: "/certificates/driving-license-2.jpg",
+    file: "/certificates/driving-license.pdf",
+  },
+  {
+    title: "Wahl Barber Training",
+    issuer: "Wahl Professional",
+    date: "9 July 2024",
+    detail: "Certificate of participation in Wahl Barber Training, Rwanda 2024.",
+    image: "/certificates/wahl-1.jpg",
+    file: "/certificates/wahl.pdf",
+  },
+  {
     title: "Video-Photography",
     issuer: "Bright Future Cornerstone",
     date: "Completed",
     detail: "Certificate of completion for the Video-Photography course.",
     image: "/certificates/completion-1.jpg",
     file: "/certificates/completion.pdf",
+  },
+  {
+    title: "Living Your Vision",
+    issuer: "Africa for Excellence Mission and the Ministry of Youth and Arts",
+    date: "Completed",
+    detail:
+      "Training at Kimisagara One Stop Center in leadership, entrepreneurship, and personal development.",
+    image: "/certificates/living-your-version-1.jpg",
+    file: "/certificates/living-your-version.pdf",
   },
   {
     title: "Advanced TVET Certificate V",
