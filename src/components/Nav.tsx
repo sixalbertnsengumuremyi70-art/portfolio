@@ -32,10 +32,10 @@ export function Nav() {
       (entries) => {
         const visible = entries
           .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+          .sort((a, b) => b.intersectionRect.height - a.intersectionRect.height)[0];
         if (visible?.target.id) setActive(visible.target.id);
       },
-      { rootMargin: "-40% 0px -45% 0px", threshold: [0.15, 0.4] },
+      { rootMargin: "-40% 0px -45% 0px", threshold: 0 },
     );
     nodes.forEach((node) => observer.observe(node));
     return () => observer.disconnect();

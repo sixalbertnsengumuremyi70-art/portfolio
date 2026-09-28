@@ -22,7 +22,7 @@ export function Certificates() {
                       ? `${item.title}, page ${index + 1} of ${item.images.length}`
                       : `${item.title} certificate`
                   }
-                  className="h-auto w-full bg-white"
+                  className="mx-auto h-auto max-h-[70vh] w-full bg-white object-contain"
                 />
               ))}
             </a>
