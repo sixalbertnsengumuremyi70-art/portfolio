@@ -171,7 +171,7 @@ export type Certificate = {
   issuer: string;
   date: string;
   detail: string;
-  image: string;
+  images: string[];
   file: string;
 };
 
@@ -181,7 +181,7 @@ export const certificates: Certificate[] = [
     issuer: "Ministry of Environment, Republic of Rwanda",
     date: "22–23 September 2026",
     detail: "Certificate of participation in the second symposium, held in Kigali.",
-    image: "/certificates/rcss-2026-1.jpg",
+    images: ["/certificates/rcss-2026-1.jpg"],
     file: "/certificates/rcss-2026.pdf",
   },
   {
@@ -189,7 +189,7 @@ export const certificates: Certificate[] = [
     issuer: "Digital Realm — Global Game Jam Rwanda",
     date: "2026",
     detail: "Certificate of participation at the Rwanda site, with RGDA.",
-    image: "/certificates/grpbal-game-jam-1.jpg",
+    images: ["/certificates/grpbal-game-jam-1.jpg"],
     file: "/certificates/grpbal-game-jam.pdf",
   },
   {
@@ -198,7 +198,7 @@ export const certificates: Certificate[] = [
     date: "7 August 2025",
     detail:
       "First-year results in Electronics and Telecommunication Technology for the 2024–2025 academic year.",
-    image: "/certificates/transcript-1.jpg",
+    images: ["/certificates/transcript-1.jpg"],
     file: "/certificates/transcript.pdf",
   },
   {
@@ -206,7 +206,7 @@ export const certificates: Certificate[] = [
     issuer: "Ingazi and Microsoft Learning",
     date: "11 July 2025",
     detail: "Completion of the Generative AI Master course on Ingazi.",
-    image: "/certificates/ingazi-master-1.jpg",
+    images: ["/certificates/ingazi-master-1.jpg"],
     file: "/certificates/ingazi-master.pdf",
   },
   {
@@ -214,7 +214,7 @@ export const certificates: Certificate[] = [
     issuer: "Ingazi and Microsoft Learning",
     date: "11 July 2025",
     detail: "Completion of the Generative AI Medium course on Ingazi.",
-    image: "/certificates/ingazi-medium-1.jpg",
+    images: ["/certificates/ingazi-medium-1.jpg"],
     file: "/certificates/ingazi-medium.pdf",
   },
   {
@@ -222,7 +222,7 @@ export const certificates: Certificate[] = [
     issuer: "Ingazi and Microsoft Learning",
     date: "11 July 2025",
     detail: "Completion of the Generative AI Foundations course on Ingazi.",
-    image: "/certificates/ingazi-foundations-1.jpg",
+    images: ["/certificates/ingazi-foundations-1.jpg"],
     file: "/certificates/ingazi-foundations.pdf",
   },
   {
@@ -230,7 +230,7 @@ export const certificates: Certificate[] = [
     issuer: "Republic of Rwanda",
     date: "10 May 2025",
     detail: "Class B license, issued in Kigali.",
-    image: "/certificates/driving-license-2.jpg",
+    images: ["/certificates/driving-license-2.jpg", "/certificates/driving-license-1.jpg"],
     file: "/certificates/driving-license.pdf",
   },
   {
@@ -238,7 +238,7 @@ export const certificates: Certificate[] = [
     issuer: "Wahl Professional",
     date: "9 July 2024",
     detail: "Certificate of participation in Wahl Barber Training, Rwanda 2024.",
-    image: "/certificates/wahl-1.jpg",
+    images: ["/certificates/wahl-1.jpg"],
     file: "/certificates/wahl.pdf",
   },
   {
@@ -246,7 +246,7 @@ export const certificates: Certificate[] = [
     issuer: "Bright Future Cornerstone",
     date: "Completed",
     detail: "Certificate of completion for the Video-Photography course.",
-    image: "/certificates/completion-1.jpg",
+    images: ["/certificates/completion-1.jpg"],
     file: "/certificates/completion.pdf",
   },
   {
@@ -255,7 +255,7 @@ export const certificates: Certificate[] = [
     date: "Completed",
     detail:
       "Training at Kimisagara One Stop Center in leadership, entrepreneurship, and personal development.",
-    image: "/certificates/living-your-version-1.jpg",
+    images: ["/certificates/living-your-version-1.jpg"],
     file: "/certificates/living-your-version.pdf",
   },
   {
@@ -263,7 +263,7 @@ export const certificates: Certificate[] = [
     issuer: "NESA, Lycée de Nyanza",
     date: "December 2023",
     detail: "National examination pass in Electronic Services.",
-    image: "/certificates/nesa-1.jpg",
+    images: ["/certificates/nesa-1.jpg", "/certificates/nesa-2.jpg"],
     file: "/certificates/nesa.pdf",
   },
 ];

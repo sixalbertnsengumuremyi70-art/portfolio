@@ -12,12 +12,19 @@ export function Certificates() {
       <div className="grid gap-5 md:grid-cols-2">
         {certificates.map((item) => (
           <article key={item.file} className="overflow-hidden rounded-3xl border border-line bg-card">
-            <a href={item.file} target="_blank" rel="noreferrer">
-              <img
-                src={item.image}
-                alt={`${item.title} certificate`}
-                className="h-56 w-full bg-white object-contain object-top"
-              />
+            <a href={item.file} target="_blank" rel="noreferrer" className="block bg-white">
+              {item.images.map((src, index) => (
+                <img
+                  key={src}
+                  src={src}
+                  alt={
+                    item.images.length > 1
+                      ? `${item.title}, page ${index + 1} of ${item.images.length}`
+                      : `${item.title} certificate`
+                  }
+                  className="h-auto w-full bg-white"
+                />
+              ))}
             </a>
             <div className="p-6">
               <p className="text-xs font-semibold tracking-[0.16em] text-brass uppercase">{item.date}</p>
